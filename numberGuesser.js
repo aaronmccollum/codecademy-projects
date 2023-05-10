@@ -13,6 +13,12 @@ const generateTarget = () => {
 };
 
 const compareGuesses = (humanGuess, computerGuess, secretNum) => {
+  // validate player answer and return error message if it fails
+  if (humanGuess < 0 || humanGuess > 9) {
+    alert('Guess is out of range. Please select between 0 and 9.');
+    return;
+  }
+  
   // get the absolute value of each player's differences
   const humanGuessDistance = Math.abs(humanGuess - secretNum);
   const computerGuessDistance = Math.abs(computerGuess - secretNum);
