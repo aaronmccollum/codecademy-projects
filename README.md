@@ -1,2 +1,2 @@
-# codecademy-projects
+# Codecademy Projects
 Repo for codecademy projects
